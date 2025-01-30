@@ -3,7 +3,7 @@ import playerController from "../controllers/playerController.js";
 import { verifyToken } from "../middlewares/authMiddleware.js";
 const router = express.Router();
 
-router.use(verifyToken);
+// router.use(verifyToken);
 
 // Create a player
 router.post("/players", playerController.createPlayer);

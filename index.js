@@ -13,7 +13,17 @@ app.use(express.json());
 
 app.use(cors());
 
+app.use(
+    cors({
+      origin: "*", // Replace with specific origin if needed
+      methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+      allowedHeaders: ["Content-Type", "Authorization"],
+    })
+  );
+
 dotenv.config();
+
+
 
 app.use("/api/user-player-positions", userPlayerPositionRoutes);
 // Routes
