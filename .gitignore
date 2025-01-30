@@ -1,0 +1,7 @@
+# add for node app
+
+
+node_modules/
+npm-debug.log
+
+.env
